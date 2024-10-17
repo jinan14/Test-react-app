@@ -9,7 +9,6 @@ body {
   justify-content: center;
   padding: 30px;
   height: 100vh;
-  /* background-color: hsla(0, 0%, 0%, 0.89); */
   background: linear-gradient(80deg, #1d1c1c, hsla(0, 0%, 13%, 0.829));
 }
 .container {
@@ -21,7 +20,6 @@ body {
   border-radius: 33px;
   padding: 30px;
   align-items: center;
-  /* background-color: white; */
   background-image: url('src/assets/WhatsApp Image 2024-10-13 at 8.17.40 AM.jpeg') ;
   background-repeat: no-repeat;
   background-size: cover;
@@ -40,7 +38,6 @@ body {
   cursor: pointer;
   background-color: rgba(61, 92, 134, 0.548);
   color: white;
-  box-shadow: 3px 3px 5px 3px gray;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,7 +48,6 @@ body {
   cursor: pointer;
   background-color:  rgba(61, 92, 134, 0.548);
   color: white;
-  box-shadow: 3px 3px 5px 3px gray;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -147,4 +143,56 @@ body {
 }
 .start:hover {
   background-color: rgb(85, 85, 212);
+}
+@media screen and (max-width:800px){
+  .container {
+    width: 600px;
+  }
+}
+@media screen and (max-width:630px){
+.carousel img {
+  width: 350px;
+  height: 229px;
+  border-radius: 11px;
+  box-shadow: 3px 3px 5px 3px gray;
+  transition: transform 0.5s ease;
+  object-fit: cover;
+  box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.493);
+}
+}
+@media screen and (max-width:610px){
+  .container {
+    width: 500px;
+  }
+}
+@media screen and (max-width:510px){
+  .carousel img {
+    width: 250px;
+    height: 229px;
+    border-radius: 11px;
+    box-shadow: 3px 3px 5px 3px gray;
+    transition: transform 0.5s ease;
+    object-fit: cover;
+    box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.493);
+  }
+  .container {
+    width: 400px;
+  }
+}
+@media screen and (max-width:410px){
+  .carousel img {
+    width: 230px;
+    height: 229px;
+    border-radius: 11px;
+    box-shadow: 3px 3px 5px 3px gray;
+    transition: transform 0.5s ease;
+    object-fit: cover;
+    box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.493);
+  }
+  .container {
+    width: 340px;
+  }
+  .carousel .left, .right{
+    width: 30px;
+  }
 }
