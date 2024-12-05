@@ -2,6 +2,9 @@ import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
+import { FaAngleRight } from "react-icons/fa6";
+import { FaAngleLeft } from "react-icons/fa6";
+
 
 function App() {
   const quesArray = [
@@ -110,11 +113,12 @@ function App() {
 
             <div className='carousel'>
 
-              <button className='left' onClick={moveLeft}>left</button>
+              <button className='left' onClick={moveLeft}><FaAngleLeft /></button>
 
                 <img src={quesArray[count].imageArray[imageIndex]} alt="Hint Image" />
               
-              <button className='right' onClick={moveRight}>right</button>
+              <button className='right' onClick={moveRight}><FaAngleRight />
+              </button>
 
             </div>
 

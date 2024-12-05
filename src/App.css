@@ -29,12 +29,15 @@ body {
 .carousel {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 10px;
   width: 100%;
 }
 .carousel .left {
   padding: 10px;
-  border-radius: 11px;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
   cursor: pointer;
   background-color: rgba(61, 92, 134, 0.548);
   color: white;
@@ -44,7 +47,9 @@ body {
   transition: background-color 0.3s ease;
 }
 .carousel .right {
-  border-radius: 11px;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
   cursor: pointer;
   background-color:  rgba(61, 92, 134, 0.548);
   color: white;
