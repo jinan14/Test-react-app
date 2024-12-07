@@ -16,25 +16,25 @@ function App() {
       question: 'What is the capital of France?',
       options: ['Paris', 'London', 'Madrid'],
       answer: 'Paris',
-      imageArray: ['src/assets/eiffel-tower.webp', 'src/assets/arc-de-triomphe-at-sunrise-paris-france.webp']
+      imageArray: ['/eiffel-tower.webp', '/arc-de-triomphe-at-sunrise-paris-france.webp']
     },
     {
       question: 'Which Football Club is based in Madrid and have a great reputation?',
       options: ['Valencia', 'Barcalona', 'Real Madrid'],
       answer: 'Real Madrid',
-      imageArray: ['src/assets/santiago-benabeu.webp', 'src/assets/zidane.jpg']
+      imageArray: ['/santiago-benabeu.webp', '/zidane.jpg']
     },
     {
       question: 'Who is known for hits like "Blank Space", "Love Story", "Shake it Off"?',
       options: ['Miley Cyrus', 'Taylor Swift', 'Ariana Grande'],
       answer: 'Taylor Swift',
-      imageArray: ['src/assets/taylor.jpeg', 'src/assets/swift.jpeg']
+      imageArray: ['/taylor.jpeg', '/swift.jpeg']
     },
     {
       question: 'which city was destroyed and rebuilt 7 times?',
       options: ['Beirut', 'Cairo', 'Gaza'],
       answer: 'Beirut',
-      imageArray: ['src/assets/beirut.webp', 'src/assets/beirut-lebanon.webp']
+      imageArray: ['/beirut.webp', '/beirut-lebanon.webp']
     }
   ];
 
