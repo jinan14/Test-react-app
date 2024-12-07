@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import { FaAngleRight } from "react-icons/fa6";
 import { FaAngleLeft } from "react-icons/fa6";
+import toast, { Toaster } from 'react-hot-toast';
 
 
 function App() {
@@ -53,14 +54,15 @@ function App() {
     setIsCorrect(correct);
 
     if (correct) {
-      if(count !== quesArray.length - 1){
+      if (count !== quesArray.length - 1) {
         setScore(score + 1);
       } else {
         setScore(score + 1);
         setTimeout(() => {
-          alert('Congratulations! You finished all the questions. Your score is: ' + (score + 1));
+          // alert('Congratulations! You finished all the questions. Your score is: ' + (score + 1));
+          toast.success('Congratulations! You finished all the questions. Your score is: ' + (score + 1))
           handleNextQuestion();
-        }, 800);
+        }, 1400);
       }
     }
 
@@ -75,8 +77,8 @@ function App() {
   };
 
   const handleNextQuestion = () => {
-      setCount(0);
-      setScore(0);
+    setCount(0);
+    setScore(0);
     setImageIndex(0);
   };
 
@@ -102,6 +104,10 @@ function App() {
 
   return (
     <div className='container'>
+      <Toaster
+        position="top-center"
+        reverseOrder={false}
+      />
       {started ? (
         <>
           <h1>Welcome, {username}!</h1>
@@ -113,8 +119,8 @@ function App() {
 
               <button className='left' onClick={moveLeft}><FaAngleLeft /></button>
 
-                <img src={quesArray[count].imageArray[imageIndex]} alt="Hint Image" />
-              
+              <img src={quesArray[count].imageArray[imageIndex]} alt="Hint Image" />
+
               <button className='right' onClick={moveRight}><FaAngleRight />
               </button>
 
@@ -142,13 +148,13 @@ function App() {
           <h1>Welcome to the Quiz App!</h1>
           <p>Please enter your username to start:</p>
           <input
-          className='input'
+            className='input'
             type="text"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             placeholder="Enter your username"
           />
-          <button className='start' onClick={username != ''? handleStart : ''}>Start</button>
+          <button className='start' onClick={username != '' ? handleStart : ''}>Start</button>
         </>
       )}
     </div>
