@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
 import './App.css';
 import { FaAngleRight } from "react-icons/fa6";
 import { FaAngleLeft } from "react-icons/fa6";
@@ -12,7 +10,7 @@ function App() {
       question: 'Which is the biggest country in the world in terms of area?',
       options: ['Russia', 'United States', 'China'],
       answer: 'Russia',
-      imageArray: ['src/assets/good-morning-moscow.webp', 'src/assets/st-basils-cathedral.webp']
+      imageArray: ['/good-morning-moscow.webp', '/st-basils-cathedral.webp']
     },
     {
       question: 'What is the capital of France?',
