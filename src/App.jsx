@@ -59,7 +59,6 @@ function App() {
       } else {
         setScore(score + 1);
         setTimeout(() => {
-          // alert('Congratulations! You finished all the questions. Your score is: ' + (score + 1));
           toast.success('Congratulations! You finished all the questions. Your score is: ' + (score + 1))
           handleNextQuestion();
         }, 1400);
